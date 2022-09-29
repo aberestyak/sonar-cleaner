@@ -7,7 +7,10 @@ COPY go.mod go.sum ./
 RUN go mod download
 COPY . .
 RUN go generate ./...
-ARG GOGCFLAGS=
+ENV GOGCFLAGS= \
+    CGO_ENABLED=0 \
+    GO111MODULE=on
+
 ARG ARTIFACT_VERSION=local
 RUN go install \
     -installsuffix "static" \
