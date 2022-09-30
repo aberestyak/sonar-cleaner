@@ -5,7 +5,7 @@ CLI tool to delete branches and analises into sonarqube's projects, which weren'
 > Doesn't delete projects completely, because they may have individual properties.
 
 
-| Опция       | Переменная окружения    | Назначение                                                                |
+| Option      | Environment variable    | Description                                                               |
 | ----------- | ----------------------- | ------------------------------------------------------------------------- |
 | `log-level` | SONAR_CLEANER_LOG_LEVEL | Choose log level                                                          |
 | `dry-run`   | SONAR_CLEANER_DRY_RUN   | Show "outdated" projects                                                  |
